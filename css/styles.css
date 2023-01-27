@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 40px; !important
+    width: 40px; !important
+}
+
+#logo {
+    height: 40px; !important
+    width: 40px; !important
+}
+
+body {
+    background-color: lightgrey;
+}
+
+header {
+    height: 25vh;
+}
+
+main {
+    height: 110vh;
+}
+
+
+div button:hover {
+    background-color: red; !important
+}
+
+#imagenes {
+    width: 100px; !important
+    height: 50px; !important
+}
+
+#mainProductos {
+    height: 120vh; !important
+}
