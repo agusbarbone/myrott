@@ -3,27 +3,29 @@
     padding: 0;
 }
 
-.logo {
-    height: 40px; !important
-    width: 40px; !important
+#logo {
+    height: 150px; !important
+    width: 150px; !important    
 }
 
-#logo {
-    height: 40px; !important
-    width: 40px; !important
-}
+
 
 body {
     background-color: lightgrey;
+    height: 100vh;
 }
 
 header {
-    height: 25vh;
+    height: 10vh;
 }
 
 main {
     height: 110vh;
 }
+
+/* footer {
+    height: 20vh;
+} */
 
 
 div button:hover {
@@ -35,6 +37,33 @@ div button:hover {
     height: 50px; !important
 }
 
-#mainProductos {
+/* #mainProductos {
     height: 120vh; !important
+} */
+
+.cambio_color:hover {
+    background-color: rgb(123, 123, 123);
 }
+
+.form-check-input:checked {
+    background-color: #141414;
+    border-color: #191919;
+}
+
+.foto-producto {
+    width: 286px; !important
+    height: 214px; !important
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+      ;
+    }
+  }
+
+  
