@@ -4,8 +4,8 @@
 }
 
 #logo {
-    height: 150px; !important
-    width: 150px; !important    
+    height: 150px !important;
+    width: 150px !important;    
 }
 
 
@@ -27,9 +27,17 @@ footer {
     height: 20vh;
 }
 
+.card-container {
+    height: 350px;
+}
+
+.image-size {
+    height: 216px;
+}
+
 
 div button:hover {
-    background-color: red; !important
+    background-color: red !important;
 }
 
 #imagenes {
@@ -58,12 +66,33 @@ div button:hover {
 .card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: 1px solid;
+    margin-top: 10px;
+}
+
+.card-size {
+    width: 450px;
 }
 
 @media screen and (max-width: 992px) {
-    body {
-      ;
+    .responsive-container {
+      align-items: center;
+    }
+    .container-size {
+        width: 600px !important;
+    }
+    .card-margin {
+        margin-top: 10px;
+    }
+    .logo-container {
+        justify-content: center !important;
+        margin-top: 10px;
     }
   }
 
+
+@media screen and (max-width: 768px) {
+    .responsive-container {
+      justify-content: center !important;
+    }
+  }
   
