@@ -21,6 +21,7 @@ header {
 
 main {
     height: 110vh;
+    margin-top: 20px;
 }
 
 footer {
@@ -95,4 +96,12 @@ div button:hover {
       justify-content: center !important;
     }
   }
+
+/* @media screen and (max-width: 576px) {
+    .card-position {
+        justify-content: center !important;
+    }
+} */
+    
+}
   
