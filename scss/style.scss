@@ -1,0 +1,27 @@
+@import "./body.scss";
+@import "./registro/registro";
+@import "./productos/productos";
+@import "./main";
+
+@media screen and (max-width: 992px) {
+    .responsive-container {
+      align-items: center;
+    }
+    .container-size {
+        width: 600px !important;
+    }
+    .card-margin {
+        margin-top: 10px;
+    }
+    .logo-container {
+        justify-content: center !important;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .responsive-container {
+      justify-content: center !important;
+    }
+}
+

@@ -1,0 +1,18 @@
+
+main {
+    div {
+        div {
+            #logo {
+                height: 150px !important;
+                width: 150px !important;
+                margin-top: 20px;
+            }
+        }
+    }
+    form {
+        .form-check-input:checked {
+            background-color: #141414;
+            border-color: #191919;
+        }
+    }
+}

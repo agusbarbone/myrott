@@ -1,0 +1,49 @@
+main {
+    height: 110vh;
+    margin-top: 20px;
+    div {
+        div {
+            img {
+                height: 150px !important;
+                width: 150px !important;
+            }
+        }
+        div {
+            p {
+
+            }
+        }
+    }
+
+    div {
+        div {
+            .card-size {
+                width: 450px;
+                .card {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    border: 1px solid;
+                    margin-top: 10px;
+                    img {
+                        width: auto !important;
+                        height: 300px !important;
+                    }
+                    div {
+                        h4 {
+
+                        }
+                        p {
+
+                        }
+                        a {
+                            
+                        }
+                    }
+                }
+            }
+            #bottom-border {
+                border-bottom: 1px solid black;
+            }
+            
+        }
+    }
+}

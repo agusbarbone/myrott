@@ -1,0 +1,82 @@
+body {
+  height: 100vh;
+  background-image: url("../assets/images/spectrum-gradient.svg");
+}
+
+header {
+  height: 10vh;
+}
+main div div #logo {
+  height: 150px !important;
+  width: 150px !important;
+  margin-top: 20px;
+}
+main form .form-check-input:checked {
+  background-color: #141414;
+  border-color: #191919;
+}
+
+footer {
+  height: 20vh;
+}
+header {
+  height: 10vh;
+}
+.card-productos {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid;
+  margin-top: 10px;
+  height: 350px;
+}
+.card-productos .image-size {
+  height: 216px !important;
+  width: auto !important;
+}
+
+footer {
+  height: 20vh;
+}
+main {
+  height: 110vh;
+  margin-top: 20px;
+}
+main div div img {
+  height: 150px !important;
+  width: 150px !important;
+}
+main div div .card-size {
+  width: 450px;
+}
+main div div .card-size .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid;
+  margin-top: 10px;
+}
+main div div .card-size .card img {
+  width: auto !important;
+  height: 300px !important;
+}
+main div div #bottom-border {
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 992px) {
+  .responsive-container {
+    align-items: center;
+  }
+  .container-size {
+    width: 600px !important;
+  }
+  .card-margin {
+    margin-top: 10px;
+  }
+  .logo-container {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .responsive-container {
+    justify-content: center !important;
+  }
+}/*# sourceMappingURL=style.css.map */
