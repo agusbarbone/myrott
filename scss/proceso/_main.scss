@@ -1,0 +1,94 @@
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container-timeline {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+.text-box {
+    padding: 20px 30px;
+    background:  #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+    background-color: #212529;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #212529;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #212529;
+    right: -14px;
+}
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #212529;
+    left: -14px;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container-timeline{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 1rem;
+    }
+    .text-box small {
+        margin-bottom: 10px;
+    }
+    .right-container {
+        left: 0;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #212529;
+        border-left: 0;
+        left: -14px;
+    }
+
+}
