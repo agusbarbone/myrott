@@ -1,5 +1,28 @@
 body {
     height: 100vh;
-    background-image: url("../assets/images/spectrum-gradient.svg");
-    // background-color: lightgrey
+    background: rgb(252,252,252);
+    background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(152,152,152,1) 86%);
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  	z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  	background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
 }
