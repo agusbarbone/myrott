@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { ItemListContainer } from "./components/ItemListContainer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -6,6 +7,8 @@ function App() {
   return (
     <>
       <Header />
+      <ItemListContainer greeting={"Tutor"} />
+
     </>
   );
 }
