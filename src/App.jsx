@@ -1,7 +1,6 @@
 import { Header } from "./components/Header";
-import ItemCard from "./components/ItemCard";
 import ItemCards from "./components/ItemCards";
-import { ItemListContainer } from "./components/ItemListContainer";
+import  ItemModal from "./components/ItemModal"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -10,17 +9,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Header />
+        <Header />
         <Routes>
-          <Route path="/" element={<ItemListContainer greeting={"Tutor"} />}/>
-          <Route path="/detalle" element={<ItemCard />} />
+          <Route path="/" element={<ItemCards />} />
+          <Route path="/modal" element={<ItemModal />} />
         </Routes>
       </BrowserRouter>
-      <div className="App">
-        
-        
-        <ItemCards />
-      </div>
     </>
   );
 }

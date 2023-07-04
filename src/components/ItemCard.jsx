@@ -1,18 +1,20 @@
-import React from "react";
+import { Link } from "react-router-dom"
 
-function ItemCard() {
-  return (
-    <div className="card rounded-0 text-center bg-dark">
-      <div className="card-body text-light">
-        <h4 className="card-title">Card Title</h4>
-        <p className="card-text text-secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          culpa.
-        </p>
-        <button className="btn btn-outline-secondary rounded-0">Detalle</button>
-      </div>
-    </div>
-  );
+
+
+const ItemCard = ({id, stock, nombre, precio, descripcion, imagen, categoria, marca, modelo}) => {
+
+    return (
+        <div className='col-3 m-2'>
+            <h4>{marca+nombre}</h4>
+            <img src={imagen} alt={nombre}/>
+            <p>{descripcion}</p>
+            {stock <= 10 && <p style={{fontWeight: 700, color: 'red'}}>Quedan sólo {stock} unidades!</p>}
+
+            <p>Precio: ${precio}</p>
+            <Link className="btn btn-primary" to={`/detail/${id}`}>Ver más</Link>
+        </div>
+    )
 }
 
-export default ItemCard;
+export default ItemCard
