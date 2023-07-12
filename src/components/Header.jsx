@@ -3,30 +3,29 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { CartWidget } from "./CartWidget";
-
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">My Rott</Navbar.Brand>
+          <Link to="/">
+            <Navbar.Brand>My Rott</Navbar.Brand>
+          </Link>
+
           <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#home">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="#home">Contacto</Nav.Link>
-            
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <NavDropdown title="Productos" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Pipas</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Tabacos Flake
+                <NavDropdown title="Categorias" id="basic-nav-dropdown">
+                  <NavDropdown.Item>
+                    <Link to="/productos/instrumentos">Instrumentos</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Cuerda</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Cigarrillo
+                  <NavDropdown.Item>
+                    <Link to="/productos/pedales">Pedales</Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link to="/productos/amplificadores">Amplificadores</Link>
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
