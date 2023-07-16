@@ -27,7 +27,6 @@ function ItemDetail({
   const handleAgregar = () => {
     const item = {
       id,
-      stock,
       nombre,
       precio,
       descripcion,

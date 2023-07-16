@@ -6,11 +6,11 @@ export const useCartContext = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  console.log("🚀 ~ file: CartContext.jsx:9 ~ CartProvider ~ cart:", cart);
 
   const agregarAlCarrito = (prod) => {
-    setCart(...cart, prod);
-    alert("Agregado Exitosamente")
-    console.log(cart)
+    setCart([...cart, prod]);
+    alert("Agregado Exitosamente");
   };
 
   const eliminarDelCarrito = (id) => {

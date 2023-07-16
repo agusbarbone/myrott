@@ -21,7 +21,6 @@ function Cart() {
     }
   return (
     <div>
-      return (
         <div className="container my-5">
 
             <h2>Tu compra</h2>
@@ -30,8 +29,8 @@ function Cart() {
             {
                 cart.map((prod) => (
                     <div key={prod.id}>
-                        <h4>{prod.nombre}</h4>
-                        <img src={prod.img} alt={prod.nombre}/>
+                        <h4>{prod.marca}{" "}{prod.nombre}</h4>
+                        <img src={prod.imagen} alt={prod.nombre}/>
                         <p>Precio: ${prod.precio}</p>
                         <p>Cantidad: {prod.cantidad}</p>
 
@@ -39,7 +38,7 @@ function Cart() {
                             className="btn btn-danger"
                             onClick={() => eliminarDelCarrito(prod.id)}
                         >
-                            
+                           Eliminar del carrito 
                         </button>
                         <hr/>
                     </div>
@@ -53,7 +52,7 @@ function Cart() {
                 <Link className="btn btn-success mx-2" to="/checkout">Terminar mi compra</Link>
             </div>
         </div>
-    )
+    
     </div>
   )
 }
